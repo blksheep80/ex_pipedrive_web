@@ -1,5 +1,10 @@
 # ExPipedriveWeb
 
+[![Hex.pm](https://img.shields.io/hexpm/v/ex_pipedrive_web.svg)](https://hex.pm/packages/ex_pipedrive_web)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/ex_pipedrive_web/)
+[![CI](https://github.com/blksheep80/ex_pipedrive_web/actions/workflows/elixir.yml/badge.svg)](https://github.com/blksheep80/ex_pipedrive_web/actions/workflows/elixir.yml)
+[![Coverage Status](https://coveralls.io/repos/github/blksheep80/ex_pipedrive_web/badge.svg?branch=main)](https://coveralls.io/github/blksheep80/ex_pipedrive_web?branch=main)
+
 Optional Plug helpers for **incoming Pipedrive webhooks**. Payload
 normalization (`ExPipedrive.Webhook.Event`) and the handler behaviour live in
 core [`ex_pipedrive`](https://hex.pm/packages/ex_pipedrive)
@@ -85,6 +90,9 @@ Hex: [`ex_pipedrive_web`](https://hex.pm/packages/ex_pipedrive_web).
 ```bash
 mix deps.get
 mix test
+mix coveralls
 mix format --check-formatted
 mix credo --strict
 ```
+
+Coverage HTML: `mix coveralls.html` (opens `cover/excoveralls.html`). CI uploads lcov from the primary Elixir 1.17 cell to [Coveralls](https://coveralls.io/github/blksheep80/ex_pipedrive_web) and fails if total coverage drops below 60%.
