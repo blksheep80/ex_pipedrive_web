@@ -87,6 +87,9 @@ Hex: [`ex_pipedrive_web`](https://hex.pm/packages/ex_pipedrive_web).
 
 ## Development
 
+Issue tracking: [beads](https://github.com/steveyegge/beads) via `bd` (prefix `expdw-`).
+GitHub issues on this repo are the product backlog.
+
 ```bash
 mix deps.get
 mix test
